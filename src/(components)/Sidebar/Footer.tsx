@@ -17,9 +17,9 @@ export default function Footer() {
         </div>
         <div className={style.footer_container_details}>
           <div>
-            <p>₹1,32,499 EMI</p> <p>starting from ₹3,099</p>
+            <p>₹1,32,499 EMI</p> <p style={{ color: "#5d5d5d" }}  >starting from ₹3,099</p>
           </div>
-          <button onClick={onOpen}>continue</button>
+          <button onClick={onOpen}>Continue</button>
         </div>
       </div>
       {open && <PinCodePrompt onClose={onClose} />}

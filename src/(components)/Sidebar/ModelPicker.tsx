@@ -15,14 +15,14 @@ export default function ModelPicker() {
       <h3>CHOOSE MODEL AND VARIANT</h3>
       <div className={style.mp_buttons}>
         {productModels.map((item: StaticImageData) => (
-          <button key={String(item)}>
+          <button style={{ margin: '4px' }} key={String(item)}>
             <Image src={item} alt={String(item)} />
           </button>
         ))}
       </div>
-      <div className={style.mp_note}>
+      <div style={{ marginTop: '1rem' }} className={style.mp_note}>
         <Image src={tick} alt="checked tick" role="presentation" />
-        <p>8 Year Battery Warranty included!</p>
+        <p style={{ color: "#000" }} >8 Year Battery Warranty included!</p>
         <button onClick={onOpen}>
           <Image src={info} alt="info" role="presentation" />
         </button>

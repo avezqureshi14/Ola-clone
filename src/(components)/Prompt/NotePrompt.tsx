@@ -19,7 +19,7 @@ export default function NotePrompt(props: INoteProps) {
           onClick={(e) => e.stopPropagation()}
         >
           <div className={style.note_title}>
-            <h3>The delivery timeline mentioned is subject to</h3>
+            <h3 style={{ color: "#000" }} >The delivery timeline mentioned is subject to</h3>
             <Image src={info} alt="info" role="presentation" />
           </div>
           <ul className={style.note_list}>

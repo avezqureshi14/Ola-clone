@@ -9,19 +9,19 @@ export default function ProductDetails() {
   const { open, onOpen, onClose } = useModel();
 
   return (
-    <div className={style.model_details_container}>
+    <div style={{ color: 'black !important' }} className={style.model_details_container}>
       <p className={style.model_details_title}>S1 Pro 2nd Generation</p>
       <div className={style.model_details_cols}>
-        <div className={style.model_details_col}>
-          <p>CERTIFIED RANGE</p>
+        <div >
+          <p style={{ color: "#5d5d5d !important", fontWeight: '700', marginBottom: '5px' }} >CERTIFIED RANGE</p>
           <p>195km</p>
         </div>
-        <div className={style.model_details_col}>
-          <p>TOP SPEED</p>
+        <div >
+          <p style={{ color: "#5d5d5d !important", fontWeight: '700', marginBottom: '5px' }} >TOP SPEED</p>
           <p>120 km/h</p>
         </div>
-        <div className={style.model_details_col}>
-          <p>0-40 km/h</p>
+        <div >
+          <p style={{ color: "#5d5d5d !important", fontWeight: '700', marginBottom: '5px' }} >0-40 km/h</p>
           <p>2.9sec</p>
         </div>
       </div>
@@ -32,6 +32,6 @@ export default function ProductDetails() {
         </button>
       </div>
       {open && <NotePrompt onClose={onClose} />}
-    </div>
+    </div >
   );
 }

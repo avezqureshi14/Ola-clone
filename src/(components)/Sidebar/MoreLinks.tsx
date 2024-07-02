@@ -21,6 +21,9 @@ export default function MoreLinks() {
           key={item.title}
           className={style.moreLinks_item}
           onClick={() => handleOnClick(item)}
+          style={{
+            marginBottom: '-1rem'
+          }}
         >
           <div className={style.moreLinks_item_inner1}>
             <Image src={item.icon} alt="icon" role="presentation" />
