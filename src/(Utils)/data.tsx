@@ -25,12 +25,17 @@ export const productBikeImages: StaticImageData[] = [
 ];
 export const productAdImages: StaticImageData[] = [ad1, ad2];
 
-export const productColors: StaticImageData[] = [
-  color1,
-  color2,
-  color3,
-  color4,
-  color5,
+export interface IProductsColors {
+  img: StaticImageData;
+  title: string;
+}
+
+export const productColors: IProductsColors[] = [
+  { img: color1, title: "Amethys" },
+  { img: color2, title: "Steller blue" },
+  { img: color3, title: "Matt White" },
+  { img: color4, title: "jet Black" },
+  { img: color5, title: "Midnight Blue" },
 ];
 
 export const productModels: StaticImageData[] = [model1, model2, model3];

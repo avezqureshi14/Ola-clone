@@ -4,8 +4,12 @@ import { productModels } from "@/(Utils)/data";
 import Image, { StaticImageData } from "next/image";
 import tick from "../../../public/images/tick.svg";
 import info from "../../../public/images/InfoIconLight.svg";
+import BatteryPrompt from "../Prompt/BatteryPrompt";
+import useModel from "@/(hooks)/useModel";
 
 export default function ModelPicker() {
+  const { open, onOpen, onClose } = useModel();
+
   return (
     <div className={style.model_picker_container}>
       <h3>CHOOSE MODEL AND VARIANT</h3>
@@ -19,10 +23,11 @@ export default function ModelPicker() {
       <div className={style.mp_note}>
         <Image src={tick} alt="checked tick" role="presentation" />
         <p>8 Year Battery Warranty included!</p>
-        <button>
+        <button onClick={onOpen}>
           <Image src={info} alt="info" role="presentation" />
         </button>
       </div>
+      {open && <BatteryPrompt onClose={onClose} />}
     </div>
   );
 }

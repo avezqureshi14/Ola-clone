@@ -1,0 +1,87 @@
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.p_container_card {
+  width: 545px;
+  background: #fff;
+  padding: 32px 25px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 8px 8px 0 0;
+}
+
+.p_input {
+  font-size: 14px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  --webkit-border-radius: 0;
+  padding: 28.5px 19px 23px;
+  color: rgba(0, 0, 0, 0.86);
+  transition: 0.1s ease-out;
+  width: 100%;
+  background-color: #f3f4f5;
+  caret-color: #16aa51;
+  height: 54px;
+}
+
+.p_container_card_title h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #212529;
+}
+
+.p_container_card_title h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+.p_container_card_button {
+  height: 50px;
+  background-color: black;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.note_container {
+  width: 545px;
+  padding: 32px 25px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 8px 8px 0 0;
+  background-color: white;
+}
+
+.note_container p {
+  color: #707070;
+}
+
+.note_title {
+  display: flex;
+  gap: 30px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.note_list {
+  font-size: 16px;
+  line-height: 20px;
+  color: #707070;
+}
