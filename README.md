@@ -2,6 +2,8 @@
 
 This project is a clone of the Ola website, built using Next.js and deployed on Vercel. The purpose of this project is to replicate the functionality and design of the Ola website to practice and demonstrate web development skills.
 
+![ola-clone](https://github.com/avezqureshi14/Ola-clone/assets/95353195/3883dc4e-c945-4f1d-8c8c-6342656749a9)
+
 ## Table of Contents
 - [Installation](#installation)
 - [Development](#development)
